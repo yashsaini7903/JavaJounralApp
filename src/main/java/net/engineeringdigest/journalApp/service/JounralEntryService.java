@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
@@ -15,8 +16,9 @@ import java.util.List;
 import java.util.Optional;
 
 
-
-@Component
+//we use service at place of @component for standard and readablity
+//@Component
+@Service
 @Slf4j
 public class JounralEntryService {
   //@Slf4j= private static final Logger log = LoggerFactory.getLogger(JounralEntryService.class);
